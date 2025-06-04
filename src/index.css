@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "tailwindcss";
+
+:root {
+  --defBackground: white;
+}
+*[data-scheme="dark"] {
+  --defBackground: red;
+}
+
+* {
+  box-sizing: border-box;
+}
+html body {
+  height: 100dvh;
+  min-width: 100%;
+
+  background-color: hsl(218, 28%, 13%);
+}
+
+@theme inline {
+  --color-me: var(--defBackground);
+}
+@theme {
+  --color-footer: hsl(216, 53%, 9%);
+  --color-intro: hsl(217, 28%, 15%);
+  --color-main: hsl(218, 28%, 13%);
+  --color-testi: hsl(219, 30%, 18%);
+  --font-primeFont: "Raleway", sans-serif;
+  --font-bodyFont: "Open Sans", sans-serif;
+  --breakpoint-xs: 480px;
+}
+
+@layer components {
+  .flex-center {
+    @apply flex flex-row justify-center items-center;
+  }
+  .flex-center-md {
+    @apply md:flex  md:justify-between md:items-center;
+  }
+  .flex-center-md-footer {
+    @apply md:flex  md:justify-between ;
+  }
+  .navlink {
+    @apply font-primeFont md:text-lg md:tracking-wider font-medium hover:font-bold hover:text-white text-sm text-nowrap;
+  }
+  .cta-btn{
+    @apply text-white bg-linear-to-l from-cyan-500 hover:from-teal-300 to-teal-300 px-12 py-2 md:py-4 rounded-4xl w-full font-bold md:text-lg cursor-pointer active:scale-95 transition-all ease-in-out duration-[0.3s]
+  }
+  .reg-btn{
+    @apply text-white bg-linear-to-l from-cyan-500 hover:from-teal-300 to-teal-300 px-5 py-4 text-[14px] text-nowrap rounded-4xl w-full font-bold  cursor-pointer active:scale-95 transition-all ease-in-out duration-[0.3s]
+  }
+  .footer-icon-p1 {
+    @apply   stroke-gray-400 group-hover:stroke-teal-200;
+  }
+  .footer-icon-p2 {
+    @apply   fill-gray-400 group-hover:fill-teal-200;
+  }
+
+  .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #bbc0c6;
+  }
+  .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    /* transform: scaleX(0); */
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom left;
+    transition: 0.25s ease-out;
+  }
+  .hover-underline-animation:hover::after {
+    /* transform: scaleX(1); */
+    width: 100%;
+    transform-origin: bottom left;
+  }
+  .container-main {
+    @apply w-full flex flex-col items-center justify-center py-8;
+  }
+  .hero-heading {
+    @apply w-full font-primeFont text-[23px] md:text-5xl font-bold md:font-extrabold text-white text-center leading-loose;
+  }
+}
