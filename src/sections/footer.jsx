@@ -177,8 +177,8 @@ function Footer() {
           </div>
         </div>
       <p class="text-white text-center mt-8">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Mostafa yousry</a>.
+       
+      Coded by <a href="https://portfolio1-pi-fawn.vercel.app">Mostafa yousry</a>.
     </p>
       </div>
     </section>
