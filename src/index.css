@@ -12,11 +12,11 @@
 * {
   box-sizing: border-box;
 }
-html body {
+html, body {
   height: 100dvh;
   min-width: 100%;
-
   background-color: hsl(218, 28%, 13%);
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -40,22 +40,22 @@ html body {
     @apply md:flex  md:justify-between md:items-center;
   }
   .flex-center-md-footer {
-    @apply md:flex  md:justify-between ;
+    @apply md:flex  md:justify-between;
   }
   .navlink {
     @apply font-primeFont md:text-lg md:tracking-wider font-medium hover:font-bold hover:text-white text-sm text-nowrap;
   }
-  .cta-btn{
-    @apply text-white bg-linear-to-l from-cyan-500 hover:from-teal-300 to-teal-300 px-12 py-2 md:py-4 rounded-4xl w-full font-bold md:text-lg cursor-pointer active:scale-95 transition-all ease-in-out duration-[0.3s]
+  .cta-btn {
+    @apply text-white bg-linear-to-l from-cyan-500 hover:from-teal-300 to-teal-300 px-12 py-2 md:py-4 rounded-4xl w-full font-bold md:text-lg cursor-pointer active:scale-95 transition-all ease-in-out duration-[0.3s];
   }
-  .reg-btn{
-    @apply text-white bg-linear-to-l from-cyan-500 hover:from-teal-300 to-teal-300 px-5 py-4 text-[14px] text-nowrap rounded-4xl w-full font-bold  cursor-pointer active:scale-95 transition-all ease-in-out duration-[0.3s]
+  .reg-btn {
+    @apply text-white bg-linear-to-l from-cyan-500 hover:from-teal-300 to-teal-300 px-5 py-4 text-[14px] text-nowrap rounded-4xl w-full font-bold  cursor-pointer active:scale-95 transition-all ease-in-out duration-[0.3s];
   }
   .footer-icon-p1 {
-    @apply   stroke-gray-400 group-hover:stroke-teal-200;
+    @apply stroke-gray-400 group-hover:stroke-teal-200;
   }
   .footer-icon-p2 {
-    @apply   fill-gray-400 group-hover:fill-teal-200;
+    @apply fill-gray-400 group-hover:fill-teal-200;
   }
 
   .hover-underline-animation {

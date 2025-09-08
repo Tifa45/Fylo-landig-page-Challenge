@@ -1,11 +1,11 @@
 function Hero() {
   return (
     <div className=" container-main isolate  overflow-hidden pb-[16%] relative">
-      <div className="w-full  ">
-        <div className=" w-[80%] md:w-[50%] mx-auto ">
-          <img src="illustration-intro.png" alt="intro" className=" w-full" />
+      <div className="w-full ">
+        <div className=" w-[80%] md:w-[50%] max-w-5xl mx-auto flex justify-center ">
+          <img src="illustration-intro.png" alt="intro" className=" w-fit" />
         </div>
-        <div className="w-full absolute bottom-[50%] xs:bottom-[30%] xl:bottom-[5%]  sm:bottom-[20%]  -z-10 flex flex-col bg-intro h-[110%] ">
+        <div className="w-full absolute bottom-[50%] xs:bottom-[30%] xl:bottom-[5%]  sm:bottom-[20%] -z-10 flex flex-col bg-intro h-[110%] ">
           <div className="@container w-full mt-auto">
             <img
               src="bg-curvy-desktop.svg"

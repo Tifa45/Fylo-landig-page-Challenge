@@ -1,8 +1,8 @@
 function Productive() {
   return (
-    <section>
-      <div className="md:flex md:items-center py-10">
-        <div className="px-8">
+    <section >
+      <div className="md:flex md:items-center py-10 md:gap-20">
+        <div className="px-20">
           <img src="illustration-stay-productive.png" alt="stay-productive" />
         </div>
         <div className="md:flex md:flex-col md:justify-center md:w-[50%] p-4 ">

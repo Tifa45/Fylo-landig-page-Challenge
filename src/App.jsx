@@ -10,7 +10,7 @@ import Testimons from "./sections/testmons";
 function App() {
   return (
     <>
-      <div className="w-full h-full">
+      <div className="w-full h-full ">
         <NavBar />
         <Hero />
         <Features />

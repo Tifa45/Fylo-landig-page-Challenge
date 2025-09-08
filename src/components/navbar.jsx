@@ -2,7 +2,7 @@ import { navLinks } from "../constants/constant";
 
 function NavBar() {
   return (
-    <div className="flex justify-between items-center px-6 pt-4 md:px-6 md:pt-8 bg-intro ">
+    <div className="flex justify-between items-center px-6 pt-4 md:px-20 md:pt-8 bg-intro ">
       <div className=" flex justify-items-start ">
         <img
           src="./logo.svg"
